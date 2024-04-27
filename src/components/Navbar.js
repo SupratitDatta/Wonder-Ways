@@ -4,7 +4,7 @@ import "../css/Navbar.css";
 function Navbar() {
   return (
     <section className="nav-bar">
-      <div className="logo">Go Trip</div>
+      <div className="logo">Travel Trails</div>
       <ul className="menu">
         <li><a href="#">home</a></li>
         <li><a href="#">tours</a></li>

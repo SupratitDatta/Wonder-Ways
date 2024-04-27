@@ -5,9 +5,9 @@
 
 .places-text small {
     font-family: Roboto;
-    color: #ffc342;
+    color: crimson;
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .places-text h2 {
@@ -46,7 +46,7 @@
 .cards .text {
     padding: 20px;
     font-family: Barlow Condensed;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .cards .card-box {
@@ -54,6 +54,8 @@
     flex-flow: row;
     background-color: #fde02f;
     font-size: 18px;
+    height: 40px;
+    border-radius: 5px;
     font-family: Roboto;
     align-items: center;
     justify-content: center;

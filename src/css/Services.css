@@ -10,7 +10,7 @@
     padding: 50px 10px;
     border: lightcyan solid 1px;
     text-align: center;
-    margin: 180px 50px;
+    margin: 80px 15px;
     transition: all 1s;
     display: flex;
     flex-flow: column;
@@ -20,6 +20,7 @@
 
 .service-item:hover {
     box-shadow: 3px 3px 20px lightsteelblue;
+    background: skyblue;
 }
 
 .service-item h2 {
@@ -31,8 +32,8 @@
 }
 
 .service-item img {
-    width: 60px;
-    height: 60px;
+    width: 260px;
+    height: 260px;
     flex: 1;
 }
 
