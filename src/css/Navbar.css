@@ -10,37 +10,68 @@
     position: sticky;
     top: 0;
     z-index: 1;
-  }
-  
-  .logo {
+}
+
+.logo {
     flex: 1;
     font-size: 40px;
     padding: 20px;
     margin-left: 50px;
     font-family: Satisfy;
-  }
-  
-  ul.menu {
+}
+
+ul.menu {
     flex: 1;
     display: flex;
     flex-flow: row wrap;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     flex: 1;
     list-style-type: none;
     font-size: 16px;
     font-family: "Barlow Condensed";
     text-align: center;
-  }
-  
-  .menu li a {
+}
+
+.menu li a {
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-  }
-  
-  .menu li a:hover {
+}
+
+.menu li a:hover {
     color: midnightblue;
     text-decoration: underline;
-  }
+}
+
+@media all and (max-width: 942px) {
+    .nav-bar {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: static;
+    }
+
+    .logo {
+        flex: 1;
+        font-size: 30px;
+        margin: 10px auto;
+        font-family: Satisfy;
+        color: #fde02f;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .nav-bar ul li {
+        flex: 1;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+}

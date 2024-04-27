@@ -3,9 +3,9 @@
     flex-flow: row;
     align-items: center;
     justify-content: center;
-  }
-  
-  .service-item {
+}
+
+.service-item {
     flex: 1;
     padding: 50px 10px;
     border: lightcyan solid 1px;
@@ -16,22 +16,35 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .service-item:hover {
+}
+
+.service-item:hover {
     box-shadow: 3px 3px 20px lightsteelblue;
-  }
-  
-  .service-item h2 {
+}
+
+.service-item h2 {
     font-family: Barlow Condensed;
     font-size: 18px;
     width: 120px;
     color: #001f38;
     flex: 1;
-  }
-  
-  .service-item img {
+}
+
+.service-item img {
     width: 60px;
     height: 60px;
     flex: 1;
-  }
+}
+
+@media all and (max-width: 942px) {
+    .services {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .services .service-item {
+        flex: 1;
+        margin-bottom: -130px;
+        width: 400px;
+    }
+}
