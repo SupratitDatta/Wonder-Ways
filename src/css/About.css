@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 100px;
@@ -8,6 +8,7 @@
 
 .about-img {
     flex: 1;
+    margin-right: 5vw;
 }
 
 .about-img img {
@@ -17,16 +18,15 @@
 }
 
 .about-text {
-    flex: 1;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    width: 90vw;
 }
 
 .about-text small,
 .about-text p,
 .about-text input,
 .about-text a {
-    flex: 1;
     font-family: Roboto;
 }
 
@@ -51,6 +51,7 @@
     font-family: Roboto;
     letter-spacing: 1px;
     cursor:pointer;
+    text-align: justify;
 }
 
 .about-text p {
@@ -82,42 +83,46 @@
     transform: translateY(-10px);
 }
 
-@media all and (max-width: 1334px) {
-    .about-img img {
-        width: 300px;
-        height: 500px;
-    }
-}
-
-@media all and (max-width: 1116px) {
+@media only screen and (max-width: 1116px) {
     .about {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 0px;
     }
-
+    
     .about-img {
-        flex: 1;
-        margin-bottom: 20px;
+      margin-bottom: 50px; 
+      margin-right: 0vw;
     }
-
+    
+    .about-img img{
+        width:80vw;
+        height:auto;
+    }
+  
     .about-text {
-        flex: 1;
-        margin: auto;
         text-align: center;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
+        width: 90vw;
     }
-
+    .about-text p{
+        width: 90vw;
+        text-align: justify;
+    }
+  
     .about-text h2 {
-        font-size: 35px;
+      font-size: 35px; 
+      width: 90vw;
+      text-align: center;
     }
 
-    .about-img img {
-        width: 400px;
-        height: 400px;
+    .about-text a {
+        margin-left: auto;
+        margin-right: auto;
     }
-}
+  }
+  
+  /* Optional: Additional refinements for extra small screens */
+  @media only screen and (max-width: 768px) {
+  
+  }

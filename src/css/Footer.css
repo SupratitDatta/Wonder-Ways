@@ -1,36 +1,33 @@
 .footer {
-    background-image: url("https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293781/pine-tree_mq2sgp.jpg");
+    background-image: url("../asset/footer.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     width: 100%;
-    height: 40vh;
+    height: 35vh;
+    margin-top: 10vh;
     position: relative;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-.footer::before {
-    position: absolute;
-    content: "";
-    display: block;
     background-color: rgba(0, 0, 36, 0.8);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
 .footer .links {
-    position: relative;
-    color: #fff;
-    flex: 1;
+    color: white;
+    height: 80%;
+    width: 24vw;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.contact-data, .querry-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .links ul {
@@ -40,25 +37,22 @@
 .links h3 {
     font-family: Barlow Condensed;
     font-weight: normal;
-    font-size: 23px;
+    color: crimson;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
 .links li {
     font-family: Roboto;
     cursor: pointer;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .links li:hover {
     color: #ffa801;
 }
 
-.social-media{
-    padding: 0px;
-}
-
-.socialIcon{
+.socialIcon, .contact li{
     color: white;
     text-decoration: none;
     display: flex;
@@ -69,8 +63,8 @@
     margin-left: -30px;
 }
 
-.socialIcon p{
-    margin-left:10px;
+.socialIcon p, .contact p{
+    margin-left: 10px;
 }
 
 .links a{
@@ -84,12 +78,29 @@
 
 @media all and (max-width: 708px) {
     .footer {
+        flex-direction: column;
+        height: auto;
         width: 100%;
-        height: 40vh;
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+        align-items: center; 
+    }
+    .footer .links{
+        width: 100%;
+    }
+    .contact-data{
+        margin: 5vh 10vw 5vh -1vh;
+    }
+    .querry-data{
+        margin: 0vh 4vh 5vh auto;
+    }
+    .querry-data .support{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 120%;
+        margin-left: -15px;
+    }
+    .querry-data .coupon{
+        white-space: nowrap;
+        overflow: hidden;
+        margin-left:-15px;
     }
 }

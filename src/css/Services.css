@@ -37,15 +37,25 @@
     flex: 1;
 }
 
-@media all and (max-width: 942px) {
-    .services {
-        display: flex;
-        flex-flow: column wrap;
+@media only screen and (max-width: 768px) {
+    .service-item {
+        width: calc(100% - 30px); 
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-
-    .services .service-item {
-        flex: 1;
-        margin-bottom: -130px;
-        width: 400px;
+  
+    .service-item h2 {
+        font-size: 16px;
+    }
+}
+  
+@media only screen and (max-width: 942px) {
+    .services {
+        flex-flow: column; 
+    }
+  
+    .service-item {
+        margin-bottom: 0;
     }
 }

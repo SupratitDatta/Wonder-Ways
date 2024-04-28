@@ -99,65 +99,32 @@
     width: 20%;
 }
 
-@media all and (max-width: 1172px) {
-    .banner-text-item .form {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+@media only screen and (max-width: 768px) {
+    .banner{
+        height: 100vh;
     }
-
-    .banner-text-item .form input,
-    .banner-text-item .form .date,
-    .banner-text-item .form a {
-        flex: 1;
-        margin-bottom: 5px;
-        font-size: 14px;
-    }
-
-    .banner-text-item .form input {
-        width: 60%;
-    }
-
-    .banner-text-item .form .date {
-        width: 30%;
-    }
-
-    .banner-text-item .form .book {
-        width: 10%;
-        font-size: 14px;
-    }
-
     .banner-heading h1 {
-        font-size: 60px;
+        font-size: 40px; 
+        margin-bottom: 50px;
     }
-}
-
-@media all and (max-width: 1414px) {
-    .banner-text-item .form input {
-        width: 40%;
+  
+    .banner-text-item .form {
+        flex-direction: column; 
     }
-
-    .banner-text-item .form .date {
-        width: 30%;
+  
+    .banner-text-item input,
+    .banner-text-item .date,
+    .banner-text-item .book {
+        margin-bottom: 15px; 
+        font-size: 14px; 
     }
-
-    .banner-text-item .form .book {
-        width: 20%;
-        font-size: 14px;
+  
+    .banner-text-item input {
+        width: 100%; 
     }
-}
-
-@media all and (max-width: 928px) {
-    .banner .form input,
-    a {
-        font-size: 12px;
-    }
-}
-
-@media all and (max-width: 1173px) {
-    .banner .form {
-        background-color: transparent;
+  
+    .banner-text-item .date,
+    .banner-text-item .book {
+        width: 100%; 
     }
 }

@@ -83,11 +83,6 @@
     overflow: hidden;
 }
 
-.zoom-img .img-card {
-    position: absolute;
-    overflow: hidden;
-}
-
 .img-card img {
     -webkit-transition: 0.8s ease;
     transition: 0.8s ease;
@@ -98,48 +93,40 @@
     transform: scale(1.1);
 }
 
-@media all and (max-width: 942px) {
+@media only screen and (max-width: 942px) {
+    .places{
+        margin-bottom: 50px;
+    }
     .places-text {
-        margin-top: 200px;
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
 }
-
-@media all and (max-width: 1194px) {
+  
+@media only screen and (max-width: 1194px) {
     .places .card-box p {
         font-size: 14px;
     }
 }
-
-@media all and (max-width: 1086px) {
-    .places .cards .text {
-        line-height: 40px;
-    }
-
-    .cards .text .h2 {
-        font-size: 12px;
-    }
-
-    .cards .img-card img {
-        height: 260px;
+  
+@media only screen and (max-width: 974px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+  
+    .card {
+        width: 80%;
+        border-radius:10px;
     }
 }
-
-@media all and (max-width: 974px) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 20px;
+  
+@media only screen and (max-width: 768px) {
+    .places-text h2 {
+        font-size: 40px; 
     }
-
-    .card {
-        width: 300px;
-        height: 500px;
-        margin: auto;
-    }
-
+  
     .cards .text {
-        padding: 5px;
-        font-family: Barlow Condensed;
+        line-height: 30px; 
     }
 }
