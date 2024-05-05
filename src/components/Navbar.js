@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <section className="nav-bar">
-      <div className="logo">Travel Trails</div>
+      <div className="logo">Wonder Ways</div>
       <ul className={`menu ${isOpen ? "show" : ""}`}>
         <li><a href="#">home</a></li>
         <li><a href="#">tours</a></li>

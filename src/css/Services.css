@@ -8,7 +8,8 @@
 .service-item {
     flex: 1;
     padding: 50px 10px;
-    border: lightcyan solid 1px;
+    border: lightcyan solid 2px;
+    box-shadow: 0 0 12px skyblue;
     text-align: center;
     margin: 80px 15px;
     transition: all 1s;
