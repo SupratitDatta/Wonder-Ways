@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/Navbar.css";
+import logo from "../asset/logo.jpeg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ function Navbar() {
 
   return (
     <section className="nav-bar">
+      <img src={logo} className="logo-img"></img>
       <div className="logo">Wonder Ways</div>
       <ul className={`menu ${isOpen ? "show" : ""}`}>
         <li><a href="#">home</a></li>

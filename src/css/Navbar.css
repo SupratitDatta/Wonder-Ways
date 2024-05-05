@@ -15,8 +15,16 @@
 .logo {
     flex: 1;
     font-size: 40px;
-    margin-left: 50px;
+    margin-left: 10px;
     font-family: Satisfy;
+}
+
+.logo-img{
+    height: 35px;
+    margin-left:20px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .menu {
@@ -99,6 +107,10 @@
         margin: 10px auto auto 10px;
     }
 
+    .logo-img{
+        margin-left: 10px;
+    }
+    
     .menu {
         display: none; 
     }
