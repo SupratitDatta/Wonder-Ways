@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 100px;
+    padding-top: 20vh;
     padding-bottom: 50px
 }
 
@@ -42,7 +43,7 @@
 }
   
 .container__img:hover {
-    outline: 0.3rem solid #fde02f; 
+    outline: 0.3rem solid crimson; 
     transform: translateY(-1rem) scale(1.05);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
     z-index: 20;

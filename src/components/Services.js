@@ -7,7 +7,7 @@ import pic4 from "../asset/travellers.jpg";
 
 function Services() {
     return (
-        <section className="services">
+        <section className="services" id ="services">
             <div className="service-item">
                 <img src={pic1} alt="Local Guides"></img>
                 <h2>8000+ Our Local Guides</h2>

@@ -9,10 +9,10 @@ import peru from "../asset/peru.webp"
 
 function Places() {
     return (
-        <section className="places">
+        <section className="places" id="places">
             <div className="places-text">
-                <small>FEATURED TOURS PACKAGES</small>
                 <h2>Favourite Places</h2>
+                <small>FEATURED TOURS PACKAGES</small>
             </div>
 
             <div className="cards">

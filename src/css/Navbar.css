@@ -17,6 +17,7 @@
     font-size: 40px;
     margin-left: 10px;
     font-family: Satisfy;
+    cursor: pointer;
 }
 
 .logo-img{
@@ -33,6 +34,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-right: 20px
 }
 
 .menu.show {
@@ -51,22 +53,25 @@
     font-size: 16px;
     font-family: "Barlow Condensed";
     text-align: center;
-    padding: 10px 0;
-    width: 90px;
+    padding: 10px 10px;
+    width: fit-content;
 }
 
 .menu li a {
+    white-space: nowrap;
+    overflow: hidden;
+    word-spacing: 1px;
+    font-family: "Times New Roman", Times, serif;
     text-decoration: none;
     color: #000;
     text-transform: uppercase;
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .menu li a:hover {
     color: crimson;
-    font-weight: 800;
     text-decoration: none;
-    transform: translateX(10px);
+    transform: translateY(-5px);
 }
 
 .hamburger {

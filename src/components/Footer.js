@@ -5,13 +5,13 @@ import "../css/Footer.css";
 
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer" id="footer">
             <div className="contact-data">
                 <div className="links contact">
                     <h3>Contact Us</h3>
                     <ul>
                         <li><FaMapMarkerAlt /><p>Wano Country</p></li>
-                        <li><FaEnvelope /><p> traveltrails@gmail.com</p></li>
+                        <li><FaEnvelope /><p> wonderways@gmail.com</p></li>
                         <li><FaPhone /><p>+91 9876504321</p></li>
                     </ul>
                 </div>
