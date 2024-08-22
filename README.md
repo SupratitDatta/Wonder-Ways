@@ -16,7 +16,7 @@ To get started with Wonder Ways, follow these steps:
 
 1. **Clone the Repository**: Clone this GitHub repository to your local machine.
     ```
-    git clone https://github.com/your-username/wonder-ways.git
+    git clone https://github.com/SupratitDatta/Wonder-Ways.git
     ```
 
 2. **Navigate to the Directory**: Change to the project directory.
