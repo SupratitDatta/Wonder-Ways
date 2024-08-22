@@ -6,24 +6,22 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        // Function to handle smooth scroll on menu items click
+
         const smoothScroll = () => {
             document.querySelector('html').style.scrollBehavior = 'smooth';
         };
 
-        // Add smooth scroll effect to menu items
         const menuItems = document.querySelectorAll('.menu a');
         menuItems.forEach(item => {
             item.addEventListener('click', smoothScroll);
         });
 
-        // Clean up event listeners
         return () => {
             menuItems.forEach(item => {
                 item.removeEventListener('click', smoothScroll);
             });
         };
-    }, []); // Empty dependency array to ensure this effect runs only once
+    }, []);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
